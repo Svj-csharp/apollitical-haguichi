@@ -355,7 +355,8 @@ namespace Haguichi {
         public static void open_redirect_uri (string action) {
            if (action == "get-hamachi") {
                open_uri ("https://www.vpn.net/linux");
-           } else {
+           } 
+           else {
                open_uri ("https://haguichi.net/redirect/?action=%s&version=%s&language=%s".printf (action, Config.VERSION, Intl.get_language_names ()[1]));
            }
         }
